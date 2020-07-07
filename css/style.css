@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+	font-family:"Fascinate";
+	src:url("./fonts/Fascinate-Regular.ttf");	
+}
+@font-face{
+	font-family:"Major";
+	src:url("./fonts/MajorMonoDisplay-Regular.ttf");	
+}
+@font-face{
+	font-family:"Oleo";
+	src:url("./fonts/OleoScript-Regular.ttf");	
+}
+
+body{
+    background-color: #FEF8B0;
+    text-align: center;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.content{
+    position: relative;
+    margin: 30px;
+}
+
+    .son-1{
+        margin-left: 200px;
+        display: inline-block;
+        /* position: relative; */
+        float: left;
+    }
+    .son-2{
+        margin: 0px;
+        display: inline-block;
+        /* position: relative; */
+    }
+    .son-3{
+        margin-right: 200px;
+        display: inline-block;
+        /* position: relative; */
+        float: right;
+    }
+.d-icons{
+    font-family: cursive;
+    color: #8A75FF;
+}
+    .icons{
+        width: 30px;
+    }
+
+    .chooseImg{
+        width: 250px;
+        height: 200px;
+    }
+
+    #d-dates{
+        display:inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+        #d-dates input{
+            display: block;
+            margin-bottom: 5px;
+            padding: 15px;
+        }
+
+        .chooseColor{
+            text-decoration: none;
+            display: inline-block;
+            width: 40%;
+            margin: 10px 0;
+            
+            padding: 10px 0;
+            color: #fff;
+        }
+        #pink{
+            border-radius: 100%;
+            display: inline-block;
+            width: 100px;
+            background-color: #fcbad9;
+            padding: 10px;
+            margin: 5px;
+        }
+        #purple{
+            border-radius: 100%;
+            display: inline-block;
+            width: 100px;
+            background-color: #dda6f7;
+            padding: 10px;
+            margin: auto;
+        }
+        #blue{
+            border-radius: 100%;
+            display: inline-block;
+            width: 100px;
+            background-color: #93befd;
+            padding: 10px;
+            margin: auto;
+        }
+
+        #generate{
+            text-decoration: none;
+            position: relative;
+            bottom: 20px;
+            color: #000;
+            background-color: #aaa;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 5px 30px;
+        }
+
+    #contentCard{
+        margin-left: auto;        
+        margin-right: auto;
+        width: 60%;
+        display: none;
+    }
+    .valentineS{
+        font-family: Oleo,sans-serif;
+        border: 10px solid rgb(85, 17, 17);
+        box-shadow: 15px 15px 15px rgb(255, 255, 255);
+    }
+    .birthdayS{
+        font-family: Fascinate,cursive;
+        border: 10px solid rgb(134, 255, 134);
+        box-shadow: 15px 15px 15px rgb(255, 253, 106);
+    }
+    .motivationS{
+        font-family: Major,sans-serif;
+        border: 10px solid rgb(1, 0, 63);
+        box-shadow: 15px 15px 15px rgba(77, 204, 193, 0.521);
+    }

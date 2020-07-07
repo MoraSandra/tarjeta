@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Tarjeta Felicitación</title>
+</head>
+<body>
+    
+    <div class="content">
+        <h1>¡Crea tu tarjeta de felicitación!</h1>
+        <div class="d-icons">
+            <img class="icons" src="./images/icon-theme.png">
+            <h3>Elige un tema...</h3>
+        </div>
+        <div>
+            <input type="radio" name="theme" onclick="valentine()"> San Valentin
+            <input type="radio" name="theme" onclick="birthday()" checked> Feliz Cumpleaños
+            <input type="radio" name="theme" onclick="motivation()"> Motivación
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="d-icons">
+            <img class="icons" src="./images/icon-image.png">
+            <h3>Elige una imagen...</h3>
+        </div>
+        <div>
+            <div class="son-1">
+                <img class="chooseImg" src="./images/img-valentine.png" alt="image-1"> <br>
+                <input type="radio" name="image" onclick="sendPhoto('valentine')"> San Valentin
+            </div>
+            <div class="son-2">
+                <img class="chooseImg" src="./images/img-birthday.png" alt="image-2"> <br>
+                <input type="radio" name="image" onclick="sendPhoto('birthday')" checked> Feliz Cumpleaños
+            </div>
+            <div class="son-3">
+                <img class="chooseImg" src="./images/img-motivation.png" alt="image-3"> <br>
+                <input type="radio" name="image" onclick="sendPhoto('motivation')"> Motivación
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="d-icons">
+            <img class="icons" src="./images/icon-title.png">
+            <h3>TITULO</h3>
+        </div>
+        <div id="d-dates" >
+            <input type="text" placeholder="Capture un titulo" id="titleCard" >
+            <input type="text" placeholder="Capture un subtitulo" id="subtitleCard" >
+            <input type="text" placeholder="Capture el nombre de la persona" id="nameCard">
+        </div>
+        <textarea id="messageCard" placeholder="Capture el cuerpo del mensaje" cols="40" rows="10" plac></textarea>
+    </div>
+
+    <div class="content">
+        <div class="d-icons">
+            <img class="icons" src="./images/icon-color.png">
+            <h3>Color...</h3>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="chooseColor">
+            <div id="pink"><a value="pink" href="#pink" onclick="pink()" >Rosa</a> <br></div>
+            <div id="purple"><a value="purple" href="#purple" onclick="purple()" >Morado</a> <br></div>
+            <div id="blue"><a value="blue" href="#blue" onclick="blue()" >Azul</a><br></div>
+        </div>
+        <a id="generate" href="#hideList" onclick="showElements()">Generar</a>
+
+    </div>
+
+    <div id="contentCard" class="content birthdayS" >
+        <h1 class="titleUsed">Titulo</h1>
+        <h5 class="subtitleUsed">Subtitulo</h5>
+        <img id="imageChosen" src="./images/img-birthday.png" alt="imageChosen">
+        <p class="textUsed">Mensaje!
+        </p>
+        <h3 class="despedidaPeronsa">Con cariño se despide de ti</h3>
+        <h4 class="author">Autor</h4>
+        <h4 id="chooseDate" class="cDate">Fecha</h4>
+    </div>
+
+    <script src="./js/java.js"></script>
+
+</body>
+</html>
